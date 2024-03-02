@@ -406,7 +406,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.lelebakar)) user.lelebakar = 0
                 if (!isNumber(user.leleg)) user.leleg = 0
                 if (!isNumber(user.level)) user.level = 0
-                if (!isNumber(user.limit)) user.limit = 40
+                if (!isNumber(user.limit)) user.limit = 10
                 if (!isNumber(user.pengeluaran)) user.pengeluaran = 0 
                 if (!isNumber(user.limitjoinfree)) user.limitjoinfree = 1
                 if (!isNumber(user.lion)) user.lion = 0
@@ -904,7 +904,7 @@ if (!('nickname' in user)) user.nickname = ''
                     lelebakar: 0,
                     leleg: 0,
                     level: 0,
-                    limit: 40,
+                    limit: 10,
                     limitjoinfree: 1,
                     lion: 0,
                     lionexp: 0,
@@ -1849,7 +1849,7 @@ ${userTag} Perintah Ini Hanya Dapat Digunakan *Moderator*`,
         premium: `*${emoji.premium} Especially for Premium*\n
 ${userTag} Perintah Ini Hanya Dapat Digunakan Pengguna *Premium* !`,
         group: `*${emoji.group} Especially for groups*\n
-${userTag} Perintah Ini Hanya Dapat Digunakan *Digrup*`,
+${userTag} Perintah Ini Hanya Dapat Digunakan *Digrup*\n\n*https://chat.whatsapp.com/HanfYszpKzbGcCGgWdHLTa*`,
         private: `*${emoji.private} Especially for Personal*\n
 ${userTag} Perintah Ini Hanya Dapat Digunakan *Dipribadi*`,
         admin: `*${emoji.admin} Especially for Admins*\n
