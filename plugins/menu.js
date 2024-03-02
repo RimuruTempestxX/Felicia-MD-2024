@@ -47,7 +47,8 @@ before: `*Hai Saya Adalah Felicia-MD*
 ╭ ⎔ ━─━─━─━─━─━─━─━─━─━━❐
 ⎔   Semua Menu     *.allmenu*
 ⎔   Tipe Menu          *.menulist*
-╰ ⎔ ━─━─━─━─━─━─━─━─━─━─━─━─━❐
+⎔   Dashboard         *.dashboard*
+╰ ⎔ ━─━─━─━─━─━─━─━─━─━─━─━❐
 
 ╭ ⎔ ━─━─━─━─━─━─━─━─━─━━❐
 │      *Membaca S&K Bot*
@@ -55,9 +56,9 @@ before: `*Hai Saya Adalah Felicia-MD*
 │
 │      *Diharapkan Anda Bergabung*
 ⎔ *— Grup WhatsApp: https://bit.ly/3O686WH*
-╰ ⎔ ━─━─━─━─━─━─━─━─━─━─━─━─━❐
+╰ ⎔ ━─━─━─━─━─━─━─━─━─━─━─━❐
 
-╭ ⎔ ━─━─━─━─━─━─━─━─━─━─━─━─━❐
+╭ ⎔ ━─━─━─━─━─━─━─━─━─━─━─━❐
 │      *Bot Gratis Ditambahkan Ke Grup*
 ╰ ⎔ ━─━─━─━─━─━─━─━─━─━━❐
 `,

@@ -1,4 +1,4 @@
-let handler = async (m, { args, usedPrefix }) => {
+let draw = async (m, { args, usedPrefix }) => {
     let user = global.db.data.users[m.sender]
 
     const crystalNeeded = 3 // jumlah crystal yang dibutuhkan untuk 1x gacha
@@ -95,16 +95,11 @@ function doNormalGacha(user) {
         } else if (randomNumber2 < 0.5) {
             user.rock += 1
             return "🍃 Item Rare: Rock"
-       } else {
-    user.exp += 1
-    return "🍃 Item Rare: EXP 1"
-}
     }
 }
 
-handler.help = ['draw', 'draw']
-handler.tags = ['rpg']
-handler.command = /^draw?$/i
-handler.register = true
-
-export default handler 
+draw.help = ['draw']
+draw.tags = ['rpg']
+draw.command = /^draw?$/i
+draw.register = true
+export default draw

@@ -5,11 +5,11 @@ let handler = async (m, { conn }) => {
     return { name, ...val }
   })
   stats = stats.sort((a, b) => b.total - a.total)
-  let txt = stats.slice(0, 30).map(({ name, total, last }, idx) => {
+  let txt = stats.slice(0, 10).map(({ name, total, last }, idx) => {
     if (name.includes('-') && name.endsWith('.js')) name = name.split('-')[1].replace('.js', '')
-    return `(${idx + 1})\nPerintah: *${name}*\nHit: *${total}x*\nTerakhir Digunakan: *${getTime(last)}*`
+    return `(${idx + 1})\nPerintah: *${name}*\nDigunakan: *${total}×*\nTerakhir Digunakan: *${getTime(last)}*`
   }).join`\n\n`
-  m.reply(`Dashboard *${conn.user.name}*\n\n${txt}`)
+  m.reply(`DASHBOARD *${conn.user.name}*\n\n${txt}`)
 }
 handler.help = ['dashboard']
 handler.tags = ['info']
@@ -32,8 +32,8 @@ export function parseMs(ms) {
 
 export function getTime(ms) {
   let now = parseMs(+new Date() - ms)
-  if (now.days) return `${now.days} days ago`
-  else if (now.hours) return `${now.hours} hours ago`
-  else if (now.minutes) return `${now.minutes} minutes ago`
-  else return `a few seconds ago`
+  if (now.days) return `${now.days} Hari Lalu`
+  else if (now.hours) return `${now.hours} Jam Lalu`
+  else if (now.minutes) return `${now.minutes} Menit Lalu`
+  else return `Baru Saja`
 }

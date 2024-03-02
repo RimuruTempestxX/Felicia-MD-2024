@@ -4,7 +4,7 @@ let handler = async m => m.reply(`
 *.qc1* - Latar Hitam
 *.qc2* - Latar Putih
 *.qc3* - Latar WhatsApp Putih
-*.qc4* - Latar WhatsApp Hitam`.trim()) Tambah sendiri kalo mau
+*.qc4* - Latar WhatsApp Hitam`.trim())
 
 
 handler.help = ['qc']
