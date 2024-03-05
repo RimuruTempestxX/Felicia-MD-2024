@@ -14,5 +14,5 @@ let handler = async (m, { conn, command, args }) => {
 handler.help = ['pull <jumlah>']
 handler.tags = ['rpg']
 handler.command = /^pull([0-9]+)|pull|pullall$/i
-handler.register = true
+handler.register = false
 export default handler

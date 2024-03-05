@@ -264,7 +264,7 @@ const rm = mt[ri];
         text: '🕒',
         key: m.key }});
         
-await conn.reply(m.chat, '*ALERT From FELICIA*\n\n```Kalau Ada Fitur ERROR Atau Tidak Merespon, Segera Lapor Ke wa.me/6285163083750.```', m)
+await conn.reply(m.chat, '*WHAT NEW ?*\n\n*New Feature*\n - *.upgrade*\n - *.gcc*\n - *.cc*\n \n*Feature Fix*\n - *.bank*\n - *.atm*\n - *.pull*\n \n*Req Fitur Baru:*\n*wa.me/6285163083750*', m)
 await conn.sendMessage(m.chat, {
 	        video: fs.readFileSync('./media/thumb3.mp4'),
             mimetype: 'video/mp4',

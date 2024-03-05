@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-*Artifact Banner v1 27 January - 15 February*
+*Artifact Banner v1 27 January - 15 April*
 
 
 *Revitalize with Elixir: Restore Your Essence*

@@ -16,5 +16,5 @@ let handler = async (m, { conn, command, args }) => {
 handler.help = ['atm <jumlah>']
 handler.tags = ['rpg']
 handler.command = /^atm([0-9]+)|atm|atmall$/i
-handler.register = true
+handler.register = false
 export default handler

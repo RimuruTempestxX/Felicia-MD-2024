@@ -27,7 +27,8 @@ const inventory = {
     chname: true,
     tipeyt: true,
     subscriber: true,
-    esens: true
+    esens: true,
+    enigma: true
   },
   ability: {
     skillsport: true,
