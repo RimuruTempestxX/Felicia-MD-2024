@@ -129,7 +129,22 @@ export async function handler(chatUpdate) {
 				if (!isNumber(user.organization.organizationsDestroyed))user.organization.organizationsDestroyed = 0			
 				if (!isNumber(user.organization.followersDestroyed)) user.organization.followersDestroyed = 0
 				if (!('alliances' in user.organization)) user.organization.alliances = ''
+				if (!user.character) user.character = {};
+                if (!('name' in user.character)) user.character.name = '';
+				if (!isNumber(user.character.level)) user.character.level = 0
+				if (!('rarity' in user.character)) user.character.rarity = ''
+				if (!isNumber(user.character.hp)) user.character.hp = 0
+				if (!isNumber(user.character.attack)) user.character.attack = 0
+				if (!isNumber(user.character.defense)) user.character.defense = 0
+				if (!isNumber(user.character.criticalRate)) user.character.criticalRate = 0
+				if (!isNumber(user.character.criticalDamage)) user.character.criticalDamage = 0
+				if (!('element' in user.character)) user.character.element = ''
+				if (!isNumber(user.character.elementalBonusDamage)) user.character.elementalBonusDamage = 0
+				if (!isNumber(user.character.healingBonus)) user.character.healingBonus = 0
+				if (!isNumber(user.character.evolution)) user.character.evolution = 0
+				if (!isNumber(user.character.weapon)) user.character.weapon = 0
                 if (!isNumber(user.agility)) user.agility = 0
+                if (!isNumber(user.enigma)) user.enigma = 0
                 if (!isNumber(user.anakanjing)) user.anakanjing = 0
                 if (!("anakname" in user)) user.anakname = ""
                 if (!("anakgender" in user)) user.anakgender = ""
@@ -254,6 +269,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.glory)) user.glory = 0
                 if (!isNumber(user.gold)) user.gold = 0
                 if (!isNumber(user.griffin)) user.griffin = 0
+                if (!isNumber(user.isExploring)) user.isExploring = false
                 if (!isNumber(user.griffinexp)) user.griffinexp = 0
                 if (!isNumber(user.griffinlastclaim)) user.griffinlastclaim = 0
                 if (!isNumber(user.griffinlastfeed)) user.griffinlastfeed = 0
@@ -634,6 +650,8 @@ if (!('nickname' in user)) user.nickname = ''
                 if (!user.premium) user.premium = false
                 if (!user.premiumTime) user.premiumTime = 0
                 if (!user.rtrofi) user.rtrofi = "Perunggu"
+                
+              
             } else
                 global.db.data.users[m.sender] = {
                     afk: -1,
